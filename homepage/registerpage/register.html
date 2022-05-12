@@ -1,19 +1,44 @@
-<h2>This is my page</h2>
-<a href="login.html">Login page</a>
-<a href="homepage.html">Home page</a>
+<h2>This is register page</h2>
+<a href="../loginpage/login.html">Login page</a>
+<a href="../homepage.html">Home page</a>
 
 
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h2{text-align:center;}
+</style>
+</head>
 <body>
+</form>
 <h2>REGISTER</h2>
 <form action="/action_page.php">
-  <div><input style="background-color:DodgerBlue;border-style: none;" type="text" id="username" name="username" value="fullname" ></div><br>
-   <div><input style="background-color:DodgerBlue;border-style: none;" type="text" id="username" name="username" value="username"></div><br>
-  <div><input style="background-color:DodgerBlue;border-style: none;" type="text" id="emailadress" name="emailaddress" value="Email address"></div><br>
-  <div><input style="background-color:DodgerBlue;border-style: none;" type="text" id="password" name="password" value="password"></div><br>
-  <div><input  type="submit" value="Create" style="width:171px;height:20px;background-color:MediumSeaGreen;border-style: none;" ></div>
+  <div><input type="text" id="username" name="username" value="Fullname" ></div><br>
+   <div><input type="text" id="username" name="username" value="Username"></div><br>
+  <div><input type="text" id="emailadress" name="emailaddress" value="Email address"></div><br>
+  <div><input type="text" id="password" name="password" value="Password"></div><br>
+  <div><input type="submit" value="Create"  ></div>
 </form> 
 </body>
-</html>
+</html>  
