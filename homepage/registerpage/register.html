@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="mystyle.css">
 <style>
 input[type=text], select {
   width: 100%;
@@ -27,18 +28,30 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 h2{text-align:center;}
 </style>
 </head>
 <body>
-</form>
-<h2>REGISTER</h2>
-<form action="/action_page.php">
-  <div><input type="text" id="username" name="username" value="Fullname" ></div><br>
-   <div><input type="text" id="username" name="username" value="Username"></div><br>
-  <div><input type="text" id="emailadress" name="emailaddress" value="Email address"></div><br>
-  <div><input type="text" id="password" name="password" value="Password"></div><br>
-  <div><input type="submit" value="Create"  ></div>
-</form> 
-</body>
-</html>  
+  <h2>REGISTER</h2>
+  <form action="/action_page.php">
+    <div>
+    <input type="text" id="username" name="username" placeholder="Fullname.." ><br>
+     <input type="text" id="username" name="username" placeholder="Username.."><br>
+    <input type="text" id="emailadress" name="emailaddress" placeholder="Email address.."><br>
+    <input type="text" id="password" name="password" placeholder="Password.."><br>
+    <input type="submit" value="Create">
+    </div>
+  </form> 
+  </body>
+  </html>
+  

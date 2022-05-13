@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="mystyle.css">
 <style>
 input[type=text], select {
   width: 100%;
@@ -26,15 +27,27 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 h2{text-align:center;}
 </style>
 </head>
 <body>
 <h2>LOGIN</h2>
 <form action="/action_page.php">
-  <div><input type="text" id="emailadress" name="emailaddress" value="Email address"></div><br>
-  <div><input type="text" id="password" name="password" value="password"></div><br>
-  <div><input type="submit" value="Login" ></div>
+  <div>
+  <input type="text" id="emailadress" name="emailaddress" placeholder="Email address.."><br>
+  <input type="text" id="password" name="password" placeholder="password.."><br>
+  <input type="submit" value="Login" >
+  </div>
 </form>
 </body>
 </html>
