@@ -5,17 +5,42 @@
 <link rel="stylesheet" href="stylesheet.css">
 
 </head>
+
 <body>
   <h2>This is login page</h2>
   <a href="../registerpage/register.html">register page</a>
   <a href="../homepage.html">Home page</a>
 <h2>LOGIN</h2>
-<form action="/action_page.php">
+<form >
   <div>
-  <input type="text" id="emailadress" name="emailaddress" placeholder="Email address.."><br>
-  <input type="password" id="password" name="password" placeholder="Password.."><br>
-  <input type="submit" value="Login" >
+  <input class="text" id="emailaddress" name="emailaddress" placeholder="Email address.."><br>
+  <input class="password" type="password" id="password" name="password" placeholder="Password.."><br>
+  <input class="submit" id="login" value="login" onclick="login1()">
   </div>
+<p id="demo">Inner HTML (content) </p>
+ 
 </form>
+<script>
+  function login1() {
+    let email = document.getElementById('emailaddress').value;
+    let psw = document.getElementById('password').value;
+  
+    if (email == 'ingyin' && psw == '123456')  {
+      document.getElementById('demo'). innerHTML = "Login Successful!";
+    } else {
+      document.getElementById('demo'). innerHTML = "Invalid email and password!";
+    }
+
+  }
+  
+
+  </script>
+  
+<script>
+  document.getElementById("login").addEventListener("click", function(event) {
+  event.preventDefault()
+});
+
+</script>
 </body>
 </html>
