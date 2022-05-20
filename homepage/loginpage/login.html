@@ -3,44 +3,59 @@
 <html>
 <head>
 <link rel="stylesheet" href="stylesheet.css">
-
 </head>
-
 <body>
+
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+</div>
+
   <h2>This is login page</h2>
   <a href="../registerpage/register.html">register page</a>
   <a href="../homepage.html">Home page</a>
-<h2>LOGIN</h2>
+
 <form >
-  <div>
+  
+  <div class="form-group">
+  <h1>Log in</h1>
+  <label for="emailaddress">Email</label>
   <input class="text" id="emailaddress" name="emailaddress" placeholder="Email address.."><br>
+  <label for="password">Password</label>
   <input class="password" type="password" id="password" name="password" placeholder="Password.."><br>
-  <input class="submit" id="login" value="login" onclick="login1()">
+  <input class="submit" type="submit" id="login" value="login" onclick="login1()">
+  <p id="demo">Forget password? </p>
   </div>
-<p id="demo">Inner HTML (content) </p>
- 
+  <div class="footer">
+    <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
+  </p>
+  </div>
 </form>
 <script>
   function login1() {
     let email = document.getElementById('emailaddress').value;
     let psw = document.getElementById('password').value;
-  
+    let errordiv =document.getElementById('demo');
+
     if (email == 'ingyin' && psw == '123456')  {
-      document.getElementById('demo'). innerHTML = "Login Successful!";
+      errordiv. innerHTML = "Login Successful!";
+      errordiv. style.color = "#00ff00";
+
     } else {
-      document.getElementById('demo'). innerHTML = "Invalid email and password!";
+      errordiv. innerHTML = "Invalid email and password!";
+      errordiv. style.color="#ff0000"
     }
 
   }
-  
-
   </script>
   
 <script>
   document.getElementById("login").addEventListener("click", function(event) {
   event.preventDefault()
 });
-
 </script>
+
 </body>
 </html>

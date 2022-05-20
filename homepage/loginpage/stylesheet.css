@@ -1,8 +1,8 @@
 
-.text, select {
+.text {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 12px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -10,40 +10,84 @@
 } 
 
 .submit {
-  width: 92%;
+  width: 100%;
   background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 13px 20px;
+  margin: 16px 0;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 25px;
   text-align:center;
 }
 
-input[type=submit]:hover {
+input.submit:hover {
   background-color: #45a049;
 }
-.password, select {
+.password {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 12px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
   } 
-div {
-  border-radius: 5px;
-  border: 5px solid transparent;
-  background-color: #FFFFFF;
-  width:500px;
-  padding: 20px;
+.form-group {
+  border-radius: 15px;
+  border: 1px solid ;
+  width: 475px;
+  padding: 45px;
   display:inline-block;
+  text-align: left;
+  box-sizing: border-box;
+
 }
+.form-group p {
+  text-align: center;
+}
+
 h2{text-align:center;}
 
 body {
-  background-color:#E7E9EB;
+  background-color:white;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
   text-align: center;
 }
