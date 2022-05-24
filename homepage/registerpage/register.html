@@ -7,15 +7,13 @@
 </head>
 <body>
 <div class="topnav">
-    <a class="active" href="#home">Home</a>
+    <a class="active" href="../homepage.html">Home</a>
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
-</div>
-  <h2>This is register page</h2>
-  <a href="../loginpage/login.html">Login page</a>
-  <a href="../homepage.html">Home page</a>
-  
+    <span><a href="../loginpage/login.html">Login</a></span>
+</div><br>
+<br>
   <form>
     <div class="form-group">
     <h1>Register</h1>
@@ -41,7 +39,7 @@
     function login1() {
       let email = document.getElementById('emailaddress').value;
       let psw = document.getElementById('password').value;
-      let errordiv =document.getElementById('demo');
+      let errordiv = document.getElementById('demo');
 
       if (email == 'ingyin' && psw == '123456')  {
         errordiv. innerHTML = "Login Successful!";
