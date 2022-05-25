@@ -1,4 +1,9 @@
 
+
+
+
+
+
 .text {
   width: 100%;
   padding: 12px 20px;
@@ -40,7 +45,7 @@ input.submit:hover {
   display:inline-block;
   text-align: left;
   box-sizing: border-box;
-
+  margin: 30px ;
 }
 .form-group p {
   text-align: center;
@@ -67,12 +72,13 @@ body {
   font-size: 17px;
 }
 
-.topnav span {
+.topnav a.w3-pad {
   float:right;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
+  width: 80px;
+  margin: 0% 2px;
+  border-radius: 25px;
+  background-color: #059862 ;
+
 }
 
 .topnav a:hover {
@@ -86,15 +92,147 @@ body {
 }
 
 body {
-  margin: 0;
+  margin:auto;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.ws-yellow {
+  background-color: #FFF4A3;
+  color: black;
+}
+
+.w3-padding-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.w3-row:before {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: inherit;
+}
+
+.w3-row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400px;
+  margin: 10px 0;
+}
+
+h3 {
+  font: 24px 'Source Sans Pro', sans-serif;
+  display: block;
+  margin: 10px 0px;
+  color:#000000;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.w3-button  {
+  padding: 8px 16px;
+  background-color: #04AA6D;
+  color: white;
+  font-family:  'Source Sans Pro', sans-serif;
+  border: none;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.tut-button {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.black-color {
+  background-color: #282A35;
+  color: white;
+}
+
+.ref-button {
+  font-size: 18px;
+  margin: auto;
+  display: inline block;
+  width: 200px;
+  border-radius: 25px;
+}
+.grey-color {
+  background-color: #E7E9EB;
+  color: #000;
+
+}
+
+.w3-round {
+  border-radius: 5px;
+}
+
+.w3-card-2 {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.green-border {
+  border-left: 4px solid #04AA6D;
+}
+
+.w3-code {
+  font-size: 15px;
+  margin: 16px 0px;
+  width: auto;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 12px;
+  word-wrap: break-word;
+  font-family: Consolas,Menlo,"courier new",monospace;
+}
+
+.tryit-button {
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 200px;
+}
+
+.w3-col {
+  float: left;
+  width: 100%;
+}
+
+.ws-black {
+  background-color: #282A35;
+  color: white;
+}
+
+.w3-col-16 {
+  padding:3%;
+}
+.w3-content {
+  max-width: 1400px;
+}
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  padding: 12px;
   background-color: black;
   color: white;
   text-align: center;
