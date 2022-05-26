@@ -1,7 +1,9 @@
 
 
 
-
+div {
+  box-sizing: border-box;
+}
 
 
 .text {
@@ -75,7 +77,7 @@ body {
 .topnav a.w3-pad {
   float:right;
   width: 80px;
-  margin: 0% 2px;
+  margin: 0.05% 5px;
   border-radius: 25px;
   background-color: #059862 ;
 
@@ -135,6 +137,7 @@ h3 {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  text-align: left;
 }
 
 .w3-button  {
@@ -152,7 +155,6 @@ h3 {
   white-space: nowrap;
 }
 
-
 .tut-button {
   background-color: #04AA6D;
   color: white;
@@ -169,6 +171,8 @@ h3 {
 }
 
 .ref-button {
+  background-color: white;
+  color: #000;
   font-size: 18px;
   margin: auto;
   display: inline block;
@@ -200,8 +204,8 @@ h3 {
   background-color: #fff;
   color: #000;
   padding: 8px 12px;
-  word-wrap: break-word;
   font-family: Consolas,Menlo,"courier new",monospace;
+  text-align: left;
 }
 
 .tryit-button {
@@ -212,9 +216,9 @@ h3 {
   width: 200px;
 }
 
-.w3-col {
+.w3-col  {
   float: left;
-  width: 100%;
+  width: 45.99999999%;
 }
 
 .ws-black {
@@ -222,16 +226,7 @@ h3 {
   color: white;
 }
 
-.w3-col-16 {
-  padding:3%;
-}
-.w3-content {
-  max-width: 1400px;
-}
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
   padding: 12px;
   background-color: black;
   color: white;
