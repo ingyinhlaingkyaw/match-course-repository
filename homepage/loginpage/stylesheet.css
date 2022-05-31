@@ -62,19 +62,26 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
+  padding: 12px 0px;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a.w3-pad {
+.wth {
+  height: 30px;
+  width: 50px;
+  text-align: center;
+}
+
+a.w3-pad {
   float:right;
   width: 80px;
   margin: 0.05% 5px;
@@ -84,13 +91,13 @@ body {
 }
 
 .topnav a:hover {
-  background-color: lightblue;
+  background-color: #04AA6D;
   color: black;
 }
 
 .topnav a.active {
   background-color: #04AA6D;
-  color: white;
+  color: black;
 }
 
 body {
