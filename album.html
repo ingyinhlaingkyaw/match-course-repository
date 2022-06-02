@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
 <style>
 
 div {
@@ -9,33 +10,55 @@ div {
 .pad{
 padding: 20px;
 }
+
+div.whbox {
+padding: 0 58px;
+width: auto;
+height: auto;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.alb-box{
+  padding: 48px 0;
+  margin: 0 -12px;
+  font: 16px system-ui,-apple-system,"Segoe U...";
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
 .album {
   background-color: white;
   color: black;
   border: 1px solid black;
   border-radius:4px;
   float: left;
-  width: 440px;
-  margin: 5px ;
+  width: 32.5%;
+  margin: 16px 5px 0px ;
+  padding: 8px 8px;
+  font: 16px;
+
 }
 img{
-width:440%;
-height: 400%;
-
+width:100%;
 }
 
 p{
 margin:0px 0px 16px 0px;
 }
+
  span{
  float:right;
 }
+
 .bor{
 border:1px solid black;
 padding:2px;
 border-top-left-radius:4px;
 border-bottom-left-radius:4px;
 }
+
 .box {
 border:1px solid black;
 padding:2px;
@@ -43,68 +66,141 @@ border-left:0;
 border-top-right-radius:4px;
 border-bottom-right-radius:4px;
 }
+
 .bor:hover,.box:hover{
 background-color: gray;
 }
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+h2{
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+  margin: 0px 0px 16px 0; 
+  font: 20px;
+  box-sizing: border-box;
+  border:none;
+  padding: 20px;
+}
+
+.mac{
+  margin: 16px 0;
+  padding: 6px 12px;
+  background-color: #0D6EFD;
+  color: #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sec{
+  margin: 16px 0;
+  padding: 6px 12px;
+  background-color: #6c757d;
+  color: #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer {
+  padding: 12px 58px;
+  background-color: white;
+  color: black;
+}
+
 </style>
 </head>
 <body>
 
-<div class="album">
- <img src="img_forest.jpg" alt="Forest" >
-<div class="pad">
-<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<a class="bor">view</a><a class="box">edit</a>
-<span >9mins</span>
-</div>
+<div class="topnav">
+  <a href="#album">Album</a>
 </div>
 
-<div class="album">
-<img src="img_5terre.jpg" alt="Cinque Terre">
-<div class="pad">
-<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<a class="bor">view</a><a class="box">edit</a>
-<span >9mins</span>
+<div class="alb-box">
+  <h2>Album example</h2>
+  <h4>Something short and leading about the collection below—its<br> contents, the creator, etc. Make it short and sweet, but not too <br>short so folks don't simply skip over it entirely.</h4>
+  <a class="mac">Main call to action</a>
+  <a class="sec">secondary action</a>
 </div>
+<div class="whbox">
+  <div class="album">
+  <img src="img/img_5terre.jpg" alt="Forest" >
+  <div class="pad">
+  <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <a class="bor">view</a><a class="box">edit</a>
+  <span >9mins</span>
+  </div>
+  </div>
+
+  <div class="album">
+  <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  <div class="pad">
+  <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <a class="bor">view</a><a class="box">edit</a>
+  <span >9mins</span>
+  </div>
+  </div>
+
+  <div class="album">
+  <img src="img/img_5terre.jpg" alt="Northern Lights">
+  <div class="pad">
+  <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <a class="bor">view</a><a class="box">edit</a>
+  <span >9mins</span>
+  </div>
+  </div>
+
+  <div class="album">
+  <img src="img/img_5terre.jpg" alt="Mountains">
+  <div class="pad">
+  <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <a class="bor">view</a><a class="box">edit</a>
+  <span >9mins</span>
+  </div>
+  </div>
+
+  <div class="album">
+  <img src="img/img_5terre.jpg" alt="Mountains">
+  <div class="pad">
+  <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <a class="bor">view</a><a class="box">edit</a>
+  <span >9mins</span>
+  </div>
+  </div>
+
+  <div class="album">
+  <img src="img/img_5terre.jpg" alt="Mountains">
+  <div class="pad">
+  <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <a class="bor">view</a><a class="box">edit</a>
+  <span >9mins</span>
+  </div>
+  </div>
 </div>
 
-<div class="album">
-<img src="img_lights.jpg" alt="Northern Lights">
-<div class="pad">
-<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<a class="bor">view</a><a class="box">edit</a>
-<span >9mins</span>
-</div>
-</div>
+<div class="footer">
+  <div>Album example is © Bootstrap, but please download and customize it for yourself!<br>
 
-<div class="album">
-<img src="img_mountains.jpg" alt="Mountains">
-<div class="pad">
-<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<a class="bor">view</a><a class="box">edit</a>
-<span >9mins</span>
+    New to Bootstrap? Visit the homepage or read our getting started guide.</div>
 </div>
-</div>
-
-<div class="album">
-<img src="img_mountains.jpg" alt="Mountains">
-<div class="pad">
-<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<a class="bor">view</a><a class="box">edit</a>
-<span >9mins</span>
-</div>
-</div>
-
-<div class="album">
-<img src="img_mountains.jpg" alt="Mountains">
-<div class="pad">
-<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<a class="bor">view</a><a class="box">edit</a>
-<span >9mins</span>
-</div>
-</div>
-
 </body>
 </html>
+
 
 
