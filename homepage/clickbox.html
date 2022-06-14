@@ -3,32 +3,459 @@
 <head>
 <style>
 
-a {
-	border-radius: 25px;
-    background-color: #FFC0C7;
-    padding: 8px 16px;
-    text-decoration: none;
-    color:#000000
+
+body {
+    margin: 0;
+    font-family: system-ui,-apple-system,"Segoe U...";
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #FFFFFF;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
 }
-a:hover {
-	background-color: #4CAF50;   
+
+header {
+    display: block;
+}
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+}
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 12px;
+    width: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -12px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+.navbar{
+    background-color: #212529;
+    color: #212529;
+    font: 16px system-ui,-apple-system,"Segoe U..." ;
+    padding: 8px 0px;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.con{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 106.5px;
+    padding: 0px 12px;
+}
+.navbar-brand {
+    color: #FFFFFF;
+    font: 20px system-ui,-apple-system,"Segoe U..." ;
+    margin: 0px 16px 0px 0px;
+    padding: 5px 0px;
+    text-decoration: none;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+svg{
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0px 8px 0px 0px;
+}
+strong {
+    font-weight: bolder;
+}
+
+button {
+    text-transform: none;
+    margin: 0;
+    font-family: inherit;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.navbar-toggler{
+    padding: 4px 12px;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+main{
+    display: block;
+}
+.py-5{
+    padding: 48px 12px;
+    margin: 0px 106.5px;
+    text-align: center;
+    font: 16px system-ui,-apple-system,"Segoe U..." ;
+    color: #212529;
+}
+.py-lg-5 {
+    padding: 48px 0px;
+    margin: 0px -12px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.col-lg-6 {
+    text-align: center;
+    margin: 0px 285px;
+    padding: 0px 12px;  
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+.fw-light{
+    margin: 0px 0px 8px 0px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: var(--bs-heading-color);
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+p{
+    margin: 0px 0px 16px 0px;
+}
+.btn-primary{
+    padding: 6px 12px;
+    margin: 8px 0px;
+    border:1px solid #0d6efd;
+    color: #fff;
+    background-color: #0d6efd;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-secondary{
+    padding: 6px 12px;
+    margin: 8px 0px;
+    border:1px solid #6c757d;
+    color: #fff;
+    background-color: #6c757d;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.bg-light {
+    background-color: #f8f9fa;
+}
+.pad{
+    padding: 48px 0px;
+}
+.row-col{
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px -8px 0px -8px;
+}
+.row-cols-md-3>* {
+    flex: 0 0 auto;
+    width: 31.8888888%;
+}
+.col{
+    margin-top: 16px;
+    padding: 0px 8px;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: #FFFFFF;
+    background-clip: border-box;
+    border:1px solid rgba(0,0,0,0.175);
+    border-radius: 0.375rem;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+}
+.card-img-top {
+    border-top-left-radius:4px;
+    border-top-right-radius: 4px;
+}
+svg {
+    vertical-align: middle;
+    overflow: hidden;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 16px;
+    color: var(--bs-card-color);
+}
+
+.btn-group {
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: middle;
 }
 
 span {
-	border-radius:25px;
-    border:1px solid #000000;
-    background-color:#FFFFFF;
-    padding: 3px 10px;
-    color:#000000;
+    float: right;
+    color: #6c757d;
+    font-size: .875em;
+    box-sizing: border-box;
+}
 
+.bor {
+    padding: 4px 8px;
+    border-right: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    position: relative;
+    flex: 1 1 auto;
+    cursor: pointer;
+    color: #6c757d;
+    border-color: #6c757d;
+    display: inline-block;
+}
+.box {
+    padding: 4px 8px;
+    margin-left: -1px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    position: relative;
+    flex: 1 1 auto;
+    cursor: pointer;
+    color: #6c757d;
+    border-color: #6c757d;
+    display: inline-block;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+.foot-pad {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin : 0px 104.5px;
+}
+footer {
+    padding: 48px 0px;
+}
+.float-right {
+    float: right;
+}
+footer p {
+    margin-bottom: 0.25rem;
+}
+.a-text{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
 }
 </style>
 </head>
 <body>
-<a>
-Website
-	<span> new </span>
-</a>
+
+<header>
+    <div class="navbar bg-dark shadow-sm">
+        <div class="container con">
+            <a href="#" class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Album</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+  <main>
+    <section class="py-5 con container">
+        <div class="con py-lg-5">
+            <div class="col-lg-6">
+                <h1 class="fw-light">Album example</h1>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                <p>
+                    <a href="#" class=" btn-primary ">Main call to action</a>
+                    <a href="#" class=" btn-secondary">Secondary action</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="pad bg-light">
+    <div class="con">
+    <div class="row-col row-cols-md-3">
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card shadow-sm">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    <div class="card-body">
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="btn-group">
+    <a class="bor">View</a><a class="box">Edit</a>
+    <span>9 mins</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="foot-pad">
+      <p class="float-right">
+        <a href="#" class="a-text">Back to top</a>
+      </p>
+      <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+      <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+    </div>
+  </footer>
 <body>
 </html>
 
